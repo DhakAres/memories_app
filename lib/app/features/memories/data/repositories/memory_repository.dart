@@ -33,7 +33,7 @@ class MemoryRepository implements IMemoryRepository {
   ) async {
     try {
       appLogger.i(
-        '📤 STORAGE REQUEST: Upload ${images.length} images to Firebase Storage',
+        '📤 STORAGE REQUEST: Upload ${images.length} images to Firebase Storagess',
       );
 
       final List<String> downloadUrls = [];
