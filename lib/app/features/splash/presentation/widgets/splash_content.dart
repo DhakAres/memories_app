@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:memories_app/app/shared/presentation/components/dividers/main_divider.dart';
 import 'package:memories_app/core/utils/constant.dart';
-import 'package:memories_app/core/utils/sizes.dart';
 
 class SplashContent extends StatelessWidget {
   const SplashContent({super.key});
@@ -35,7 +34,7 @@ class SplashContent extends StatelessWidget {
               padding: EdgeInsets.all(16.w),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(Sizes.radiusSmall),
+                borderRadius: BorderRadius.circular(8.r),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black.withOpacity(0.2),
@@ -48,7 +47,7 @@ class SplashContent extends StatelessWidget {
                 children: [
                   // Imagen
                   ClipRRect(
-                    borderRadius: BorderRadius.circular(Sizes.radiusSmall),
+                    borderRadius: BorderRadius.circular(8.r),
                     child: Image.asset(
                       'assets/images/collage_3.png',
                       width: 208.w,

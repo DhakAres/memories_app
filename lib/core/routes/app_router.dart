@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:memories_app/app/features/home/presentation/home_view.dart';
+import 'package:memories_app/app/features/memories/presentation/memory_view.dart';
 import 'package:memories_app/app/features/splash/presentation/splash_view.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -11,6 +12,7 @@ final rootNavigatorKey = GlobalKey<NavigatorState>();
 class AppRoutesNamed {
   static const splashRoute = "/splash";
   static const homeRoute = "/home";
+  static const createMemoryRoute = "/createMemory";
   // static const clientHomeRoute = "/clientHome";
   // static const adminHomeRoute = "/adminHome";
   // static const authLoginRoute = "/authLogin";
@@ -33,6 +35,12 @@ GoRouter appRouter(Ref ref) {
         path: AppRoutesNamed.homeRoute,
         builder: (context, state) {
           return const HomeView();
+        },
+      ),
+      GoRoute(
+        path: AppRoutesNamed.createMemoryRoute,
+        builder: (context, state) {
+          return const MemoryView();
         },
       ),
       // GoRoute(

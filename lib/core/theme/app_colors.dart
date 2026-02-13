@@ -32,149 +32,57 @@ enum ColorsName {
   warning, // Avisos, alertas
 }
 
-// ========== PALETA ACTIVA: CÁLIDA NOSTÁLGICA ==========
-// Evoca los tonos de fotos impresas y álbumes vintage
-// Map<ColorsName, Color> _lightColors = {
-//   // Fondos
-//   ColorsName.backgroundLight: const Color(
-//     0xFFFFF8E7,
-//   ), // Crema - fondo principal
-//   ColorsName.surfaceDark: const Color(
-//     0xFFD4816F,
-//   ), // Terracota - tarjetas con contraste
-//   ColorsName.surfaceWhite: const Color(
-//     0xFFFFDAB9,
-//   ), // Melocotón - superficies elevadas
-//   // Marca
-//   ColorsName.brandPrimary: const Color(
-//     0xFFFF9A8B,
-//   ), // Coral Suave - botones principales
-//   ColorsName.brandAccent: const Color(0xFFD4816F), // Terracota - acentos
-//   // Textos
-//   ColorsName.textPrimary: const Color(
-//     0xFF36454F,
-//   ), // Gris Carbón - texto principal
-//   ColorsName.textSecondary: const Color(
-//     0xFF8B7E74,
-//   ), // Gris Cálido - textos secundarios
-//   ColorsName.textOnBrand: const Color(
-//     0xFFFFF8E7,
-//   ), // Crema claro - texto sobre brand
-//   // Estados funcionales
-//   ColorsName.error: const Color(0xFFCC5500), // Naranja quemado para errores
-//   ColorsName.success: const Color(0xFF6B8E23), // Verde oliva para éxito
-//   ColorsName.warning: const Color(
-//     0xFFE4A853,
-//   ), // Amarillo mostaza para advertencias
-// };
-
-// Map<ColorsName, Color> _darkColors = {
-//   // Fondos (versión oscura de paleta cálida)
-//   ColorsName.backgroundLight: const Color(0xFF2C2420), // Marrón muy oscuro
-//   ColorsName.surfaceDark: const Color(0xFF8B7E74), // Gris cálido
-//   ColorsName.surfaceWhite: const Color(0xFF4A3F37), // Marrón medio
-//   // Marca (mantener calidez)
-//   ColorsName.brandPrimary: const Color(0xFFFF9A8B), // Coral Suave
-//   ColorsName.brandAccent: const Color(0xFFD4816F), // Terracota
-//   // Textos
-//   ColorsName.textPrimary: const Color(0xFFFFF8E7), // Crema para texto principal
-//   ColorsName.textSecondary: const Color(0xFFD2B48C), // Beige para secundarios
-//   ColorsName.textOnBrand: const Color(0xFFFFF8E7), // Crema sobre brand
-//   // Estados funcionales
-//   ColorsName.error: const Color(0xFFE67350), // Naranja más claro
-//   ColorsName.success: const Color(0xFF8CB369), // Verde oliva claro
-//   ColorsName.warning: const Color(0xFFF0C571), // Amarillo mostaza claro
-// };
-
-// ========== PALETAS ALTERNATIVAS (COMENTADAS) ==========
-// Descomenta una de estas paletas y comenta la activa para cambiar el tema
-
-// ---------- PALETA: TONOS TIERRA FAMILIAR ----------
-// Ambiente natural y acogedor
+// ========== PALETA ACTIVA: CÁLIDA NOSTÁLGICA REFINADA ==========
+// Evoca los tonos de fotos impresas con mayor contraste y elegancia
 Map<ColorsName, Color> _lightColors = {
-  ColorsName.backgroundLight: const Color(0xFFD2B48C), // Beige
-  ColorsName.surfaceDark: const Color(0xFF8B7355), // Marrón Suave
-  ColorsName.surfaceWhite: const Color(0xFFFAF9F6), // Blanco roto
-  ColorsName.brandPrimary: const Color(0xFFE4A853), // Amarillo Mostaza
-  ColorsName.brandAccent: const Color(0xFFCC5500), // Naranja Quemado
-  ColorsName.textPrimary: const Color(0xFF3A2F2B), // Marrón oscuro
-  ColorsName.textSecondary: const Color(0xFF8B7355), // Marrón Suave
-  ColorsName.textOnBrand: const Color(0xFFFAF9F6), // Blanco roto
-  ColorsName.error: const Color(0xFFCC5500), // Naranja Quemado
-  ColorsName.success: const Color(0xFF6B8E23), // Verde Oliva
-  ColorsName.warning: const Color(0xFFE4A853), // Amarillo Mostaza
+  // Fondos - Jerarquía clara entre niveles
+  ColorsName.backgroundLight: const Color(
+    0xFFFAF7F2,
+  ), // Arena Claro - fondo principal más neutral
+  ColorsName.surfaceDark: const Color(
+    0xFFBF9B8F,
+  ), // Rosa Arcilla - tarjetas con contraste
+  ColorsName.surfaceWhite: const Color(
+    0xFFFFFFFF,
+  ), // Blanco Puro - superficies elevadas (cards)
+  // Marca - Más desaturados para elegancia
+  ColorsName.brandPrimary: const Color(
+    0xFFE8A598,
+  ), // Coral Desaturado - botones principales
+  ColorsName.brandAccent: const Color(0xFFC9998B), // Terracota Suave - acentos
+  // Textos - Mayor contraste
+  ColorsName.textPrimary: const Color(
+    0xFF2D3436,
+  ), // Casi Negro - texto principal
+  ColorsName.textSecondary: const Color(
+    0xFF6C757D,
+  ), // Gris Medio - textos secundarios
+  ColorsName.textOnBrand: const Color(0xFFFFFBF7), // Marfil - texto sobre brand
+  // Estados funcionales
+  ColorsName.error: const Color(0xFFD64545), // Rojo Terracota para errores
+  ColorsName.success: const Color(0xFF7A9B5F), // Verde Salvia para éxito
+  ColorsName.warning: const Color(0xFFE6B566), // Ocre Dorado para advertencias
 };
+
 Map<ColorsName, Color> _darkColors = {
-  ColorsName.backgroundLight: const Color(0xFF2B2318),
-  ColorsName.surfaceDark: const Color(0xFF8B7355),
-  ColorsName.surfaceWhite: const Color(0xFF463A2F),
-  ColorsName.brandPrimary: const Color(0xFFE4A853),
-  ColorsName.brandAccent: const Color(0xFFCC5500),
-  ColorsName.textPrimary: const Color(0xFFFAF9F6),
-  ColorsName.textSecondary: const Color(0xFFD2B48C),
-  ColorsName.textOnBrand: const Color(0xFF2B2318),
-  ColorsName.error: const Color(0xFFE67350),
-  ColorsName.success: const Color(0xFF8CB369),
-  ColorsName.warning: const Color(0xFFF0C571),
+  // Fondos (versión oscura refinada)
+  ColorsName.backgroundLight: const Color(0xFF1A1715), // Chocolate Oscuro
+  ColorsName.surfaceDark: const Color(0xFF3D3330), // Café con Leche Oscuro
+  ColorsName.surfaceWhite: const Color(0xFF2B2522), // Marrón Carbón
+  // Marca (mantener calidez con sutileza)
+  ColorsName.brandPrimary: const Color(0xFFE8A598), // Coral Desaturado
+  ColorsName.brandAccent: const Color(0xFFC9998B), // Terracota Suave
+  // Textos
+  ColorsName.textPrimary: const Color(0xFFF5F1ED), // Hueso para texto principal
+  ColorsName.textSecondary: const Color(
+    0xFFB8AEA5,
+  ), // Beige Gris para secundarios
+  ColorsName.textOnBrand: const Color(0xFFFFFBF7), // Marfil sobre brand
+  // Estados funcionales
+  ColorsName.error: const Color(0xFFE87B7B), // Rojo Coral claro
+  ColorsName.success: const Color(0xFF96B87D), // Verde Salvia claro
+  ColorsName.warning: const Color(0xFFF0C985), // Ocre Suave
 };
-
-// ---------- PALETA: PASTEL SERENA ----------
-// Look moderno y minimalista
-// Map<ColorsName, Color> _lightColors = {
-//   ColorsName.backgroundLight: const Color(0xFFC8E6F5), // Azul Cielo Suave
-//   ColorsName.surfaceDark: const Color(0xFFC0C0C0), // Gris Suave
-//   ColorsName.surfaceWhite: const Color(0xFFFFFBFE), // Blanco casi puro
-//   ColorsName.brandPrimary: const Color(0xFFF4C2C2), // Rosa Empolvado
-//   ColorsName.brandAccent: const Color(0xFFE6E6FA), // Lavanda Claro
-//   ColorsName.textPrimary: const Color(0xFF4A4A4A), // Gris oscuro
-//   ColorsName.textSecondary: const Color(0xFFC0C0C0), // Gris Suave
-//   ColorsName.textOnBrand: const Color(0xFF4A4A4A), // Gris oscuro sobre pastel
-//   ColorsName.error: const Color(0xFFE57373), // Rojo pastel
-//   ColorsName.success: const Color(0xFFB2E8DD), // Verde Menta
-//   ColorsName.warning: const Color(0xFFFFD180), // Naranja pastel
-// };
-// Map<ColorsName, Color> _darkColors = {
-//   ColorsName.backgroundLight: const Color(0xFF1A2832),
-//   ColorsName.surfaceDark: const Color(0xFF4A4A4A),
-//   ColorsName.surfaceWhite: const Color(0xFF2E3842),
-//   ColorsName.brandPrimary: const Color(0xFFF4C2C2),
-//   ColorsName.brandAccent: const Color(0xFFE6E6FA),
-//   ColorsName.textPrimary: const Color(0xFFFFFBFE),
-//   ColorsName.textSecondary: const Color(0xFFC0C0C0),
-//   ColorsName.textOnBrand: const Color(0xFF4A4A4A),
-//   ColorsName.error: const Color(0xFFE57373),
-//   ColorsName.success: const Color(0xFFB2E8DD),
-//   ColorsName.warning: const Color(0xFFFFD180),
-// };
-
-// ---------- PALETA: NEUTRA ELEGANTE ----------
-// Sofisticada y atemporal
-// Map<ColorsName, Color> _lightColors = {
-//   ColorsName.backgroundLight: const Color(0xFFFAF9F6), // Blanco Roto
-//   ColorsName.surfaceDark: const Color(0xFF36454F), // Gris Carbón
-//   ColorsName.surfaceWhite: const Color(0xFFE8DCC4), // Beige Claro
-//   ColorsName.brandPrimary: const Color(0xFFA8A39D), // Gris Medio
-//   ColorsName.brandAccent: const Color(0xFFC4B5A0), // Marrón Arena
-//   ColorsName.textPrimary: const Color(0xFF36454F), // Gris Carbón
-//   ColorsName.textSecondary: const Color(0xFFA8A39D), // Gris Medio
-//   ColorsName.textOnBrand: const Color(0xFFFAF9F6), // Blanco Roto
-//   ColorsName.error: const Color(0xFF8B4949), // Rojo apagado
-//   ColorsName.success: const Color(0xFF6B8E6B), // Verde apagado
-//   ColorsName.warning: const Color(0xFFD4A373), // Naranja apagado
-// };
-// Map<ColorsName, Color> _darkColors = {
-//   ColorsName.backgroundLight: const Color(0xFF1C1E1F),
-//   ColorsName.surfaceDark: const Color(0xFF36454F),
-//   ColorsName.surfaceWhite: const Color(0xFF2A2B2C),
-//   ColorsName.brandPrimary: const Color(0xFFA8A39D),
-//   ColorsName.brandAccent: const Color(0xFFC4B5A0),
-//   ColorsName.textPrimary: const Color(0xFFFAF9F6),
-//   ColorsName.textSecondary: const Color(0xFFA8A39D),
-//   ColorsName.textOnBrand: const Color(0xFF1C1E1F),
-//   ColorsName.error: const Color(0xFFB57070),
-//   ColorsName.success: const Color(0xFF8CB389),
-//   ColorsName.warning: const Color(0xFFEDC299),
-// };
 
 @Riverpod(keepAlive: true)
 class ColorsState extends _$ColorsState {

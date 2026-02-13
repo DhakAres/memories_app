@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:memories_app/core/theme/app_colors.dart';
 import 'package:memories_app/core/theme/text_themes.dart';
-import 'package:memories_app/core/utils/sizes.dart';
 
 /// Este theme define estilos para todos los componentes comunes:
 /// AppBar, Buttons, Inputs, Cards, Text, Icons, etc.
@@ -52,9 +51,7 @@ ThemeData appTheme(
     cardTheme: CardThemeData(
       color: colorScheme.surface,
       elevation: 2,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(Sizes.radiusNormal),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.r)),
       margin: EdgeInsets.symmetric(vertical: 8.h, horizontal: 16.w),
     ),
 
@@ -66,7 +63,7 @@ ThemeData appTheme(
         elevation: 2,
         padding: EdgeInsets.symmetric(vertical: 14.h, horizontal: 24.w),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(Sizes.radiusNormal),
+          borderRadius: BorderRadius.circular(15.r),
         ),
       ),
     ),
@@ -77,7 +74,7 @@ ThemeData appTheme(
         foregroundColor: colorScheme.primary,
         padding: EdgeInsets.symmetric(vertical: 14.h, horizontal: 24.w),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(Sizes.radiusNormal),
+          borderRadius: BorderRadius.circular(15.r),
         ),
         side: BorderSide(color: colorScheme.primary, width: 1.5),
       ),
@@ -97,23 +94,23 @@ ThemeData appTheme(
       fillColor: colorScheme.surface,
       contentPadding: EdgeInsets.symmetric(vertical: 14.h, horizontal: 14.w),
       border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(Sizes.radiusMedium),
+        borderRadius: BorderRadius.circular(10.r),
         borderSide: BorderSide(color: colorScheme.onSurface.withOpacity(0.3)),
       ),
       enabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(Sizes.radiusMedium),
+        borderRadius: BorderRadius.circular(10.r),
         borderSide: BorderSide(color: colorScheme.onSurface.withOpacity(0.3)),
       ),
       focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(Sizes.radiusMedium),
+        borderRadius: BorderRadius.circular(10.r),
         borderSide: BorderSide(color: colorScheme.primary, width: 2),
       ),
       errorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(Sizes.radiusMedium),
+        borderRadius: BorderRadius.circular(10.r),
         borderSide: BorderSide(color: colorScheme.error, width: 1.5),
       ),
       focusedErrorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(Sizes.radiusMedium),
+        borderRadius: BorderRadius.circular(10.r),
         borderSide: BorderSide(color: colorScheme.error, width: 2),
       ),
       labelStyle: Theme.of(context).textTheme.labelLarge,
@@ -125,9 +122,7 @@ ThemeData appTheme(
       backgroundColor: colorScheme.secondary,
       foregroundColor: colorScheme.onSecondary,
       elevation: 4,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(Sizes.radiusNormal),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.r)),
     ),
 
     // Iconos
@@ -180,18 +175,14 @@ ThemeData appTheme(
       actionTextColor: colorScheme.primary,
       behavior: SnackBarBehavior.floating,
       elevation: 3,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(Sizes.radiusNormal),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.r)),
     ),
 
     // Dialogs
     dialogTheme: DialogThemeData(
       backgroundColor: colorScheme.surface,
       elevation: 4,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(Sizes.radiusNormal),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.r)),
       titleTextStyle: textStyles.semiBold(size: 18),
       contentTextStyle: textStyles.regular(size: 14),
     ),
@@ -200,7 +191,7 @@ ThemeData appTheme(
     tooltipTheme: TooltipThemeData(
       decoration: BoxDecoration(
         color: colorScheme.onSurface.withOpacity(0.9),
-        borderRadius: BorderRadius.circular(Sizes.radiusNormal),
+        borderRadius: BorderRadius.circular(15.r),
       ),
       textStyle: TextStyle(color: colorScheme.surface, fontSize: 12.sp),
       padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
@@ -224,9 +215,7 @@ ThemeData appTheme(
       elevation: 4,
       modalElevation: 6,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(
-          top: Radius.circular(Sizes.radiusNormal),
-        ),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(15.r)),
       ),
       clipBehavior: Clip.antiAlias,
     ),
