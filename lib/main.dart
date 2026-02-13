@@ -35,7 +35,7 @@ class MyApp extends ConsumerWidget {
           //     child: child!,
           //   );
           // },
-          title: 'memories_app',
+          title: 'memories_appDAVID',
           debugShowCheckedModeBanner: false,
           routerConfig: appRouter,
           theme: appTheme(context, colors, textStyles),
