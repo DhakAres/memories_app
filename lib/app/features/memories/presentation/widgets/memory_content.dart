@@ -55,7 +55,15 @@ class MemoryContent extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                'Tu Moodboard en Main',
+                'Estos cambios en main',
+                style: textScheme.headlineLarge?.copyWith(
+                  color: colorScheme.onSurface,
+                  fontWeight: FontWeight.w600,
+                  letterSpacing: -0.5,
+                ),
+              ),
+              Text(
+                'Tu Moodboard',
                 style: textScheme.headlineLarge?.copyWith(
                   color: colorScheme.onSurface,
                   fontWeight: FontWeight.w600,
