@@ -118,7 +118,7 @@ class MemoryContent extends ConsumerWidget {
             children: [
               Expanded(
                 child: Text(
-                  'Captura el momento en imágenes',
+                  'Captura el momento en imágenes desde Prueba',
                   style: textScheme.bodyMedium?.copyWith(
                     color: colorScheme.onSurface.withOpacity(0.6),
                   ),
